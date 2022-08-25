@@ -7,7 +7,6 @@ resource "azurerm_storage_account" "storage_account" {
   account_replication_type  = var.account_replication_type
   is_hns_enabled            = var.is_hns_enabled
   enable_https_traffic_only = var.enable_https_traffic_only
-  allow_blob_public_access  = var.allow_blob_public_access
   tags                      = var.tags
 
   dynamic "static_website" {
